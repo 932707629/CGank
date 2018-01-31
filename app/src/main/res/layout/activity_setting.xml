@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.soushin.cgank.module.setting.SettingActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:title="设置"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_webview_finish"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:text="基本设置"
+            android:textColor="@color/color7"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center_vertical"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+            <LinearLayout
+                android:id="@+id/llt_show_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="显示缩略图"
+                    android:textColor="@color/color5"
+                    android:textSize="15sp"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_thumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+            <LinearLayout
+                android:id="@+id/llt_image_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_setting_image_quality_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="缩略图质量"
+                    android:textColor="@color/color5"
+                    android:textSize="15sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_setting_image_quality_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="提升质量返回生效，降低质量刷新列表生效"
+                    android:textColor="@color/color7"
+                    android:textSize="12sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_setting_image_quality_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="原图"
+                    android:textColor="@color/color7"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+            <LinearLayout
+                android:id="@+id/ll_is_show_launcher_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="启动页妹子图"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_is_show_launcher_img_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基佬怎么会需要妹子"
+                        android:textColor="@color/color7"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_launcher_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+
+            <LinearLayout
+                android:id="@+id/ll_is_always_show_launcher_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_is_always_show_launcher_img_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="概率出现"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_is_always_show_launcher_img_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我每次都要幸临，没毛病"
+                        android:textColor="@color/color7"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_setting_always_show_launcher_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+
+            <LinearLayout
+                android:id="@+id/llt_default_gank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="主页默认干果"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_gank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android"
+                        android:textColor="@color/color7"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/colorLine"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:text="更多"
+                android:textColor="@color/color7"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+            <LinearLayout
+                android:id="@+id/llt_clean_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="清除缓存"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:text="0.00KB"
+                        android:id="@+id/tv_clean_cache"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/color7"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_right"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+
+            <LinearLayout
+                android:id="@+id/llt_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="捐赠开发者"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_right"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/colorLine"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

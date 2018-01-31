@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NormalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color1</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/color1</item>
+        <!-- api 19 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

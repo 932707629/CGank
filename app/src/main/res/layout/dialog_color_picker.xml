@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_white">
+
+        <com.soushin.cgank.widget.colorpicker.ColorPickerView
+            android:id="@+id/color_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alphaSlider="true"
+            app:alphaSliderView="@+id/v_alpha_slider_level"
+            app:density="12"
+            app:lightnessSlider="true"
+            app:lightnessSliderView="@+id/v_lightness_slider_level"
+            app:wheelType="FLOWER" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/colorLine"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_cancel"
+                    android:text="取消"
+                    android:textSize="@dimen/sp_16"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+            <View
+                android:layout_width="@dimen/px_1"
+                android:layout_height="match_parent"
+                android:background="@color/colorLine"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_sure"
+                    android:text="确定"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

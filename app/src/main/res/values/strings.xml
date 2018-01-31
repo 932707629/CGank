@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">干果</string>
+    <string name="home_search">搜索干果(日期数字有福利哦(｡◕∀◕｡))</string>
+    <string name="search_tip">搜索“12”试试(｡◕∀◕｡)</string>
+    <string name="gank_desc">小编又偷懒了,什么都没有留下...</string>
+    <string name="menu_share">分享干货</string>
+    <string name="menu_copy_link">复制链接</string>
+    <string name="menu_open_with">用浏览器打开</string>
+    <string name="welcome_text"><![CDATA[>> 欢迎使用 干果]]></string>
+</resources>

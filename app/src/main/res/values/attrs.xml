@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DribSearchView" >
+        <attr name="breadth" format="integer"  />
+        <attr name="search_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IdentityImageView">
+        <attr name="iciv_bigimage" format="reference"/><!--大图片-->
+        <attr name="iciv_smallimage" format="reference"/><!--小图片-->
+        <attr name="iciv_angle" format="float"/><!--标识角度-->
+        <attr name="iciv_radiusscale" format="float"/><!--大小图片比例-->
+        <attr name="iciv_isprogress" format="boolean"/><!--是否有进度条-->
+        <attr name="iciv_progress_collor" format="color|reference"/><!--进度条颜色-->
+        <attr name="iciv_border_color" format="color|reference"/><!--边框颜色-->
+        <attr name="iciv_border_width" format="integer"/><!--边框宽度-->
+        <attr name="iciv_hint_smallimageview" format="boolean"/><!--是否隐藏小图片-->
+    </declare-styleable>
+
+    <declare-styleable name="ColorPickerPreference">
+        <attr name="alphaSlider" format="boolean"/>
+        <attr name="lightnessSlider" format="boolean"/>
+        <attr name="density" format="integer"/>
+        <attr name="initialColor" format="integer"/>
+        <attr name="wheelType" format="enum">
+            <enum name="FLOWER" value="0"/>
+            <enum name="CIRCLE" value="1"/>
+        </attr>
+        <attr name="lightnessSliderView" format="reference"/>
+        <attr name="alphaSliderView" format="reference"/>
+        <attr name="pickerColorEditTextColor" format="integer"/>
+        <attr name="pickerTitle" format="reference|string"/>
+        <attr name="pickerButtonOk" format="reference|string"/>
+        <attr name="pickerButtonCancel" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RxScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+</resources>
